@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/fcm/static/css/main.8e2b7134.css",
-    "main.js": "/fcm/static/js/main.d9bfba0b.js",
+    "main.css": "/fcm/static/css/main.dc032846.css",
+    "main.js": "/fcm/static/js/main.c42e60d8.js",
+    "static/media/spotlight.jpg": "/fcm/static/media/spotlight.b65ad8f8a9a493ec4634.jpg",
     "static/media/blazerpic.png": "/fcm/static/media/blazerpic.4a0b23654d86cb6aef64.png",
     "static/media/underpants.png": "/fcm/static/media/underpants.1039c6f6bc7daa57cef5.png",
     "static/media/powder.png": "/fcm/static/media/powder.dacc30383f1f118d0aef.png",
@@ -11,11 +12,11 @@
     "static/media/home.png": "/fcm/static/media/home.0e3ad7b230278a4060e2.png",
     "static/media/delivery.jpg": "/fcm/static/media/delivery.4ac422a73ba49ee3d7ba.jpg",
     "index.html": "/fcm/index.html",
-    "main.8e2b7134.css.map": "/fcm/static/css/main.8e2b7134.css.map",
-    "main.d9bfba0b.js.map": "/fcm/static/js/main.d9bfba0b.js.map"
+    "main.dc032846.css.map": "/fcm/static/css/main.dc032846.css.map",
+    "main.c42e60d8.js.map": "/fcm/static/js/main.c42e60d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e2b7134.css",
-    "static/js/main.d9bfba0b.js"
+    "static/css/main.dc032846.css",
+    "static/js/main.c42e60d8.js"
   ]
 }
