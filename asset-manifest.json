@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fcm/static/css/main.dc032846.css",
-    "main.js": "/fcm/static/js/main.c42e60d8.js",
+    "main.css": "/fcm/static/css/main.97591937.css",
+    "main.js": "/fcm/static/js/main.0eef0317.js",
     "static/media/spotlight.jpg": "/fcm/static/media/spotlight.b65ad8f8a9a493ec4634.jpg",
     "static/media/blazerpic.png": "/fcm/static/media/blazerpic.4a0b23654d86cb6aef64.png",
     "static/media/underpants.png": "/fcm/static/media/underpants.1039c6f6bc7daa57cef5.png",
@@ -12,11 +12,11 @@
     "static/media/home.png": "/fcm/static/media/home.0e3ad7b230278a4060e2.png",
     "static/media/delivery.jpg": "/fcm/static/media/delivery.4ac422a73ba49ee3d7ba.jpg",
     "index.html": "/fcm/index.html",
-    "main.dc032846.css.map": "/fcm/static/css/main.dc032846.css.map",
-    "main.c42e60d8.js.map": "/fcm/static/js/main.c42e60d8.js.map"
+    "main.97591937.css.map": "/fcm/static/css/main.97591937.css.map",
+    "main.0eef0317.js.map": "/fcm/static/js/main.0eef0317.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc032846.css",
-    "static/js/main.c42e60d8.js"
+    "static/css/main.97591937.css",
+    "static/js/main.0eef0317.js"
   ]
 }
