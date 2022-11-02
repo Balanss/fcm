@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/fcm/static/css/main.83e62119.css",
-    "main.js": "/fcm/static/js/main.fd3ef230.js",
-    "static/media/spotlight.jpg": "/fcm/static/media/spotlight.b65ad8f8a9a493ec4634.jpg",
-    "static/media/blazerpic.png": "/fcm/static/media/blazerpic.4a0b23654d86cb6aef64.png",
-    "static/media/underpants.png": "/fcm/static/media/underpants.1039c6f6bc7daa57cef5.png",
-    "static/media/powder.png": "/fcm/static/media/powder.dacc30383f1f118d0aef.png",
-    "static/media/burger.jpg": "/fcm/static/media/burger.84b84b743585be60ea17.jpg",
-    "static/media/insurance.jpg": "/fcm/static/media/insurance.1c667bf7f322b847b44d.jpg",
-    "static/media/clothing.jpg": "/fcm/static/media/clothing.70a60f74c42eadd79b83.jpg",
-    "static/media/home.png": "/fcm/static/media/home.0e3ad7b230278a4060e2.png",
-    "static/media/delivery.jpg": "/fcm/static/media/delivery.4ac422a73ba49ee3d7ba.jpg",
-    "index.html": "/fcm/index.html",
-    "main.83e62119.css.map": "/fcm/static/css/main.83e62119.css.map",
-    "main.fd3ef230.js.map": "/fcm/static/js/main.fd3ef230.js.map"
+    "main.css": "/home/static/css/main.d90fadd2.css",
+    "main.js": "/home/static/js/main.89b50e28.js",
+    "static/media/spotlight.jpg": "/home/static/media/spotlight.b65ad8f8a9a493ec4634.jpg",
+    "static/media/blazerpic.png": "/home/static/media/blazerpic.4a0b23654d86cb6aef64.png",
+    "static/media/underpants.png": "/home/static/media/underpants.1039c6f6bc7daa57cef5.png",
+    "static/media/powder.png": "/home/static/media/powder.dacc30383f1f118d0aef.png",
+    "static/media/burger.jpg": "/home/static/media/burger.84b84b743585be60ea17.jpg",
+    "static/media/insurance.jpg": "/home/static/media/insurance.1c667bf7f322b847b44d.jpg",
+    "static/media/clothing.jpg": "/home/static/media/clothing.70a60f74c42eadd79b83.jpg",
+    "static/media/home.png": "/home/static/media/home.0e3ad7b230278a4060e2.png",
+    "static/media/delivery.jpg": "/home/static/media/delivery.4ac422a73ba49ee3d7ba.jpg",
+    "index.html": "/home/index.html",
+    "main.d90fadd2.css.map": "/home/static/css/main.d90fadd2.css.map",
+    "main.89b50e28.js.map": "/home/static/js/main.89b50e28.js.map"
   },
   "entrypoints": [
-    "static/css/main.83e62119.css",
-    "static/js/main.fd3ef230.js"
+    "static/css/main.d90fadd2.css",
+    "static/js/main.89b50e28.js"
   ]
 }
