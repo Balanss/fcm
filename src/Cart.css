@@ -1,0 +1,221 @@
+/* cart css section */
+
+input{
+    padding: 3px;
+  }
+.cartnavbar{
+  width: 100vw;
+margin: 0;
+height: 95px;
+background-color: #62bef7;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+position:fixed;
+top: 0;
+z-index:1;
+    background-image: url(https://www.transparenttextures.com/patterns/crissxcross.png);
+}
+
+ .SentimentDissatisfiedIcon{
+   transform:scale(3)
+ }
+
+.shopping-cart{
+  margin-top: 350px;
+text-align: center;
+}
+
+.totalProducts{
+  background-color: pink;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 2px;
+    position: relative;
+    right: 7px;
+    font-weight: 600
+}
+
+
+
+
+.cart-form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 160px;
+  background-color: #ecf6ff;
+  padding: 10px;
+  border-radius: 10px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+
+.green-success{
+  background-color: green;
+width: 285px;
+margin: auto;
+border-radius: 20px;
+padding-left: 10px;
+line-height:2
+}
+
+.bgcolormsgcart{
+  color: white;
+padding: 5px;
+}
+
+.cart-form:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cart-display{
+  display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+
+
+.cart-display-items{
+  margin: auto;}
+
+
+.cart-css{
+  cursor: default;
+width: 120px;
+margin: auto;
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+background-color: #fdfdfd;
+height: auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.cart-css:hover{
+  box-shadow: rgb(201 3 214 / 30%) 0px 0px 0px 3px;
+
+}
+
+.product-img-cart{
+  width: 100px;
+}
+
+.userdisplay{
+  margin-top: 150px;
+}
+
+.display-flex{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.cart-info{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-same{
+  margin-bottom: 10px;
+}
+
+.btn-send{
+  background-color: royalblue;
+padding: 5px 10px 5px 10px;
+border-radius: 10px;
+border-color: transparent;
+color: white;
+cursor: pointer;
+}
+
+.btn-send:hover{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 7px 4px;
+}
+
+.cart-form-spacing{
+  margin-bottom: 20px;
+}
+
+
+.empty{
+  text-align: center;
+    margin-top: 190px;
+}
+
+.hide{
+  display: none;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+
+  .cartnavbar{
+    width: 85vw;
+margin: auto;
+left: 0;
+right: 0;
+  }
+  .cart-form{
+    width:300px;
+    height:300px;
+  }
+
+.green-success{
+  width:510px;
+}
+.cart-css{
+  cursor: default;
+width: 315px;
+margin: auto;
+margin-top: 30px;
+display: flex;
+flex-direction: row;
+background-color: #fdfdfd;
+height: 286px;
+align-items: flex-start;
+margin-bottom: 20px;
+justify-content: space-around;
+text-align: center;
+flex-wrap: wrap;
+}
+
+.product-items{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+}
+
+@media screen and (min-width:1024px){
+  .cart-css{
+    margin-left: 10px;
+  }
+
+
+}
+
+@media screen and (min-width:1440px){
+  .display-flex{
+    width:70vw;
+  }
+}
+
+@media screen and (min-width:2560px){
+  .display-flex{
+    width:50vw;
+  }
+}

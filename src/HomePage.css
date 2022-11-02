@@ -1,0 +1,613 @@
+
+
+.products-box-homepage{
+  background-color: #fdfdfd;
+    background-image: url(https://www.transparenttextures.com/patterns/ag-square.png);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    border-color: #bddef3;
+    border-style: solid;
+}
+
+
+.productPageHome{
+      text-align: center;
+}
+
+.justIn{
+  text-decoration:none !important;
+}
+
+
+.contactinfotext{
+  text-align: left;
+color: white;
+}
+
+.contact-info{
+  color: white;
+  text-align: left
+}
+
+#hideme{
+  display: none;
+}
+
+.blazer-top{
+  margin-top: 70px;
+}
+
+.spotlight{
+  margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-image: url('Image/spotlight.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.pspotlight{
+  color: white;
+width: 150px;
+font-size: clamp(1rem, 0.9785rem + 0.0915vw, 1.125rem);
+}
+
+.thumbnailh3{
+  font-family: 'Ubuntu', sans-serif;
+font-size: clamp(1.5rem, 3.5946rem + -5.4054vw, 0.75rem);
+margin-top: 100px;
+}
+
+
+.aboutfcmhome{
+  text-align: center;
+    margin: auto;
+    margin-top: 170px;
+    background-color: #ecf6ff;
+    width:90vw;
+    border-radius:5px;
+    padding: 10px;
+      background-image: url("Image/delivery.jpg");
+      height: 300px;
+    background-size: cover;
+
+}
+
+.fcmptext{
+  width: 200px;
+    color: white;
+}
+
+.allofabout{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin:  auto;
+margin-bottom: 200px;
+margin-top: 100px;
+}
+
+.insidefcm{
+  line-height:2;
+  font-size: clamp(1.1875rem, 1.0726rem + 0.5747vw, 1.375rem);
+  height:auto
+}
+
+.fashion{
+      position: relative;
+}
+
+.fashion::before{
+  content: "";
+  background-image: url('./Image/clothing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.70;
+  position: absolute;
+  top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+}
+
+
+
+
+.food{
+      position: relative;
+}
+
+.food::before{
+  content: "";
+  background-image: url('./Image/burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity:0.70;
+  position: absolute;
+  top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+}
+
+
+
+.insurance{
+      position: relative;
+}
+
+.insurance::before{
+  content: "";
+  background-image: url('./Image/insurance.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity:0.70;
+  position: absolute;
+  top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+}
+
+.abttext{
+  position: relative;
+  opacity:1.5;
+  font-weight:600;
+  line-height:3;
+  background-color: #f0f8ff0a;
+      margin-left: 10px;
+      text-align: center;
+}
+
+.titleabout{
+  width: auto !important;
+}
+
+.food{
+position: relative;
+}
+
+
+
+.thumbnailpic{
+  cursor: pointer;
+text-align: center;
+background-image: url('Image/blazerpic.png');
+height: 600px;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+text-decoration: none;
+}
+.thumbnailpic0{
+  cursor: pointer;
+text-align: center;
+background-image: url('Image/underpants.png');
+height: 600px;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+text-decoration: none;
+}
+
+.dresspic{
+  background-image: url('Image/powder.png');
+  height: 600px;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.dresspic:hover , .thumbnailpic:hover , .thumbnailpic0:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.picthumb0{
+  width:143px;
+  border-radius:15px;
+}
+
+.picthumb{
+  width:150px;
+}
+
+
+.pcenter{
+  font-size: clamp(1.125rem, -1.4696rem + 5.4054vw, 1.375rem);
+  text-align: center;
+}
+.picthumb:hover,.picthumb0:hover{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius:20px;
+}
+
+.thumbnail{
+  display: flex;
+flex-direction: column;
+margin:auto;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.new-justin-div{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.salenumber{
+    font-size: 19px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.linethrough{
+  text-decoration: line-through;
+  width: 100px;
+  margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  font-size: 18px;
+  background-color: darkred;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+}
+
+.same{
+  margin:auto;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      width:130px;
+          background-color: aliceblue;
+          background-image: url(https://www.transparenttextures.com/patterns/beige-paper.png);
+          flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+
+.saleDivcat{
+  background-color: #687b87;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+    color: whitesmoke;
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 20px;
+justify-content: center;
+padding-bottom:20px
+}
+
+.color-text{
+  font-size: 16px;
+background-color: darkgreen;
+border-radius: 10px;
+padding: 0px;
+color: white;
+width: 100px;
+margin: auto;
+margin-bottom: 30px;
+}
+
+.color-text-new{
+color:#FFD700;
+background-color: #F62AA0;
+border-radius: 10px;
+padding: 0px;
+width: 100px;
+margin: auto;
+}
+
+.new-flex{display: flex;
+    align-items: center;
+    justify-content: space-evenly;}
+
+.saleDiv{
+  background-color: #687b87;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-bottom:10px;
+  margin-top:170px;
+      color: whitesmoke;
+}
+
+.newDiv{
+margin: auto;
+background-color: #687b87;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+border-radius: 10px;
+margin-bottom: 20px;
+padding-bottom:10px;
+margin-top:170px;
+  color: whitesmoke;
+}
+
+.justInimg , .saleImg{
+  height: 110px;
+  cursor: pointer;
+  margin-top:20px;
+}
+
+.saledisplaydress{
+  display: inline-block;
+      flex-wrap: wrap;
+      margin-left: 20px;
+      border-radius: 20px;
+      width: 115px;
+      margin-bottom: 30px;
+      background-color: aliceblue;
+      background-image: url(https://www.transparenttextures.com/patterns/beige-paper.png);
+}
+
+
+.displaynew1,.displaynew2{
+  display: flex;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 30px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.displaysale1, .displaysale2{
+  display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.saledisplaypants{
+  display: inline-block;
+      margin-left: 20px;
+      border-radius: 20px;
+      width: 115px;
+      margin-bottom: 30px;
+      background-color: aliceblue;
+      background-image: url(https://www.transparenttextures.com/patterns/beige-paper.png);
+      margin-top: 30px;
+}
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+.spotlight{
+  background-size: 40vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 39%;
+      margin: auto;
+      margin-top: 15px;
+      margin-bottom: 10px;
+}
+
+
+
+  .food::before {
+      content: "";
+          background-position: bottom;
+  }
+
+  .fashion::before {
+    content: "";
+}
+
+.insurance::before {
+    content: "";
+}
+
+
+
+  .displaysale1,.displaysale2,.displaynew1,.displaynew2{
+    display: flex;
+      justify-content: center;
+      width:auto;
+      padding:15px;
+      margin:auto;
+      margin-bottom: 30px;
+  }
+
+
+.thumbnailpic{
+  width: 25.0vw;;
+}
+
+.thumbnailpic0{
+  width: 25vw;
+}
+
+.dresspic{
+  width: 25vw;
+}
+
+.thumbnailh3{
+  text-align: left;
+    margin-left: 100px;
+
+}
+
+
+.thumbnail{
+  display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.picthumb0{
+  width:300px;
+  transition: transform 2s;
+}
+
+.picthumb0:hover{
+
+      transform: scale(1.1);
+}
+
+
+.aboutfcmhome{
+  width: 515px;
+  background-size: contain;
+}
+
+.abttext{
+
+    width: 53vw;
+}
+
+.allofabout{
+  flex-wrap:nowrap;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.insidefcm{
+  height:auto;
+  width:100vw
+}
+  .saleDiv{
+    width:700px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 170px;
+  }
+
+  .saledisplaydress, .saledisplaypants{
+        width: auto;
+  }
+
+
+.same{margin-left: 20px;}
+
+.saleDivcat{
+  width: 85vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.picthumb{
+  width:200px;
+}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  }
+
+@media screen and (min-width:1440px){
+  .saleDiv{
+    margin-top: 200px;
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  }
+
+  .spotlight{
+    margin-top: -60px;
+    margin-bottom: 30px;
+  }
+
+  .pspotlight{
+    width:200px;
+  }
+
+.saleDivcat{
+    width: 50vw;
+}
+
+
+.thumbnailpic , .thumbnailpic0 , .dresspic{
+  width:24.5vw;
+}
+
+.insidefcm{
+  width:30vw;
+}
+
+.allofabout{
+  display: flex;
+flex-direction: row;
+margin: auto;
+margin-bottom: 200px;
+margin-top: 100px;
+flex-wrap: wrap;
+}
+
+.abttext{
+  width:auto
+}
+
+  .newDiv{
+    width: 75vw;
+margin: auto;
+background-color: #687b87;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+border-radius: 10px;
+margin-bottom: 20px;
+padding-bottom:10px;
+margin-top:170px;
+    color: whitesmoke;
+  }
+
+  .displaysale1, .displaysale2,.displaynew1,.displaynew2 {
+    display: flex;
+    width: auto;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.new-justin-div{
+  display: flex;
+margin: auto;
+flex-direction: row;
+align-items: flex-start;
+flex-wrap: nowrap;
+
+}
+
+.thumbnail{
+margin-bottom: 80px;
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+}
+
+
+.picthumb0{
+  width:400px;
+}
+
+
+}
+
+@media screen and (min-width:2560px){
+  .thumbnailpic , .thumbnailpic0 , .dresspic{
+    width:20.5vw;
+  }
+
+}
