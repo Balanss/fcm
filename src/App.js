@@ -11,7 +11,7 @@ import About from './comp/About'
 import Footer from './comp/Footer'
 import Blouse from './Blouse/Blouse'
 import ScrollToTop from "./comp/ScrollToTop"
-import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import {HashRouter,Routes, Route} from 'react-router-dom'
 
 //
 
@@ -24,7 +24,7 @@ import './HomePage.css'
 function App() {
   return (<>
     <div className="App">
-<BrowserRouter>
+<HashRouter>
 <ScrollToTop />
 <Routes>
 <Route path="/" element={<Home />}></Route>
@@ -41,7 +41,7 @@ function App() {
 
 
 </Routes>
-</BrowserRouter>
+</HashRouter>
 
     <h1 className="displayerror"> 404 display not supported</h1>
 
