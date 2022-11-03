@@ -142,7 +142,7 @@ import Cat from './Cat'
 
 <div className='aboutfcmhome' >
  <h2 className='fcmptext'> What is FCM? </h2>
-<p className='fcmptext'> FCM Delivery Services is an all round company which provides Food ,
+<p className='fcmptext'> FCM Delivery is an all round delivery service which provides Food ,
  Clothing and More. </p>
  <p className='fcmptext'> For more information click <Link to='/about'> HERE </Link> </p>
 
