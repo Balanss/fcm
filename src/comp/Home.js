@@ -36,10 +36,6 @@ import Cat from './Cat'
 
 
 
-
-
-
-
  const Home = () => {
 
 
@@ -137,7 +133,7 @@ import Cat from './Cat'
 
       return (
           <>
-      
+
           <div className='homebody'>
           <div className='allOfNav'>
               <Navbar user={user} totalProducts={totalProducts}/>
@@ -147,7 +143,7 @@ import Cat from './Cat'
 <div className='aboutfcmhome' >
  <h2 className='fcmptext'> What is FCM? </h2>
 <p className='fcmptext'> FCM Delivery Services is an all round company which provides Food ,
- Clothing and Insurance  delivery services. </p>
+ Clothing and More. </p>
  <p className='fcmptext'> For more information click <Link to='/about'> HERE </Link> </p>
 
 

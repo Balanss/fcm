@@ -627,7 +627,10 @@ height:380px;
 .images-dress{
   width: 95px;
     transition: transform 2s;
+
 }
+
+
 
 .images-dress:hover{
   transform:scale(2.0);
@@ -922,6 +925,7 @@ flex-wrap: wrap;
 .image-blazer:hover{
   transform: scale(2.5)
 }
+
 
 
 .pants{

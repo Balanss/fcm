@@ -110,7 +110,7 @@ return (<>
       <Navbar user={user} totalProducts={totalProducts}/>
         </div>
 
-        <div className='aboutfcmhome' >
+        <div id="contact" className='aboutfcmhome' >
          <h2 className='contactinfotext'>Contact info </h2>
         <div className='contact-info'>
         <p > lilgil99@gmail.com </p>

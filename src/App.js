@@ -10,6 +10,7 @@ import AddProduct from './comp/AddProduct'
 import About from './comp/About'
 import Footer from './comp/Footer'
 import Blouse from './Blouse/Blouse'
+import ScrollToTop from "./comp/ScrollToTop"
 import {BrowserRouter,Routes, Route} from 'react-router-dom'
 
 //
@@ -24,6 +25,7 @@ function App() {
   return (<>
     <div className="App">
 <BrowserRouter>
+<ScrollToTop />
 <Routes>
 <Route path="/" element={<Home />}></Route>
 <Route path='/about' element={<About />} ></Route>
