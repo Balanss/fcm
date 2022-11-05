@@ -147,8 +147,8 @@ return (<>
                 <li className='tosli'> <p> After we received the invoice we will send you the total cost via email.</p> </li>
                 <li className='tosli'> <p> Payment methods : via internet banking,COD (cash on delivery)</p> </li>
                   <li className='tosli'> <p> No return policy of items kept for more than 2 days.</p> </li>
-                    <li className='tosli'> <p> Delivery fees North SRD 60.</p> </li>
-                  <li className='tosli' >  <p> Delivery fees South SRD 45.</p> </li>
+                    <li className='tosli'> <p> Delivery fees North SRD 75.</p> </li>
+                  <li className='tosli' >  <p> Delivery fees South SRD 65.</p> </li>
             </ul>
            </div>
 
