@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 import { auth, fs} from '../Firebase'
 import Footer from './Footer'
 import home from '../Image/home.png'
-
+import certified from '../Image/certified.png'
 
 
 const About = () => {
@@ -168,6 +168,27 @@ return (<>
 
             </div>
 
+            </div>
+
+            <div className='business-insultant' >    <h2 className='titleabout business-insultant-h2'>
+We provide certified  styling services to people on how to dress appropriately on the work floor as well at social events such as</h2>
+<ul className='tosul'>
+<li className='tosli'><p> On -call stylist for hotels, event planners, wedding planners  </p> </li>
+<li className='tosli'><p> Stylist for politicians </p> </li>
+<li className='tosli'><p> Visual merchandising for pop-up stores  </p> </li>
+<li className='tosli'> <p> Styling for retail stores </p> </li>
+<li className='tosli'> <p> Casting models for events  </p> </li>
+</ul>
+<h2 className='titleabout  business-insultant-h2'> This consultation could be scheduled by appointment. The private consultation consists of </h2>
+<ul className='tosul'>
+<li className='tosli'><p>  Client interview/Body shape analysis </p> </li>
+<li className='tosli'><p> Client needs Analysis   </p></li>
+<li className='tosli'><p> Agreed Budget to spend </p> </li>
+<li className='tosli'><p> Preference of shopping with the stylist/trying out some outfits </p> </li>
+<li className='tosli'><p> Delivery options available of try outs after online consultation  </p></li>
+<img className='certified' src={certified} />
+
+</ul>
             </div>
 
 

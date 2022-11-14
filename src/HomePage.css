@@ -158,13 +158,16 @@ margin-top: 100px;
   opacity:1.5;
   font-weight:600;
   line-height:3;
-  background-color: #f0f8ff0a;
+      background-color: #ffffffe3;
       margin-left: 10px;
       text-align: center;
 }
 
 .titleabout{
-  width: auto !important;
+ width:80%;
+ margin:auto;
+  font-size:20px;
+  margin-top: 10px;
 }
 
 .food{

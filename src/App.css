@@ -73,6 +73,7 @@ li:hover{
 }
 a{
   text-decoration: none;
+
 }
 
 .footer{
@@ -86,6 +87,8 @@ font-weight:600;
 background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
 }
 
+
+.text-black{color:black;}
 
 .tosh3{
   text-align:left;
@@ -109,9 +112,11 @@ opacity: 1.5;
 font-weight: 600;
 position: relative;
 margin-left: -15px !important;
-background-color: #ffffff33;
+background-color: #ffffffe3;
 width:fit-content;
 line-height:1.6;
+padding-left: 5px;
+padding-right: 5px;
 }
 .tosli:hover{
   box-shadow: none;
@@ -548,6 +553,39 @@ top: 0px;
 left: 6px;
 }
 
+.business-insultant{
+position: relative;
+margin-bottom: 40px;
+}
+
+.business-insultant::before{
+  content:"";
+  background-image: url('Image/consult.jpg');
+  background-position:bottom;
+  opacity: 0.40;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+}
+
+.certified{
+  width:275px;
+  margin-top:10px;
+  position: relative;
+  box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+    border-radius: 94px;
+}
+
+.business-insultant-h2{
+  text-align: center;
+    font-size: 23px;
+    position: relative;
+        background-color: #ffffff33;
+        width:auto !important;
+}
+
 @media screen and (max-width:374px) {
   .navbar-loggedin{
     display: flex;
@@ -790,6 +828,25 @@ margin-bottom: 50px;
 
 @media screen and (min-width:650px){
 
+  .business-insultant{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .business-insultant::before{
+    content: "";
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .business-insultant-h2{
+    width:600px !important;
+  }
+
   .product{
     width:165px;
   }
@@ -984,6 +1041,11 @@ flex-wrap: wrap;
 
   @media screen and (min-width:1024px){
 
+.business-insultant-h2{
+  margin: auto;
+}
+
+
     .cat{
       width: 95%;
     }
@@ -1012,6 +1074,15 @@ flex-wrap: wrap;
   }
 
   @media screen and (min-width:1440px){
+
+
+
+.business-insultant{
+  width:auto;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
 .products-box {
    width: 75vw;
  }

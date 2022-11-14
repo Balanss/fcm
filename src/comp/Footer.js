@@ -11,12 +11,12 @@ return (<>
 
 <div className="footer">
 <div className="inside-footer" >
-<Link to='/About'> <p > Contact info </p> </Link>
+<Link to='/About'> <p className="text-black" > Contact info </p> </Link>
  </div>
 
 <div className="tos">
 
-<Link to='/About'> <p > Terms & Conditions </p> </Link>
+<Link to='/About'> <p className="text-black" > Terms & Conditions </p> </Link>
   </div>
 
 <div className="fcm">
