@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../comp/Navbar'
 import Products from './Products'
-import Products1 from './Products1'
+
 import {useState, useEffect} from 'react'
 import { auth, fs } from '../Firebase'
 import Footer from '../comp/Footer'

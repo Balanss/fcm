@@ -1,11 +1,35 @@
 import React from 'react'
-import Navbar from './Navbar'
+import NavbarHome from './NavbarHome'
 import {useState, useEffect} from 'react'
 import { auth, fs} from '../Firebase'
 import Footer from './Footer'
 import home from '../Image/home.png'
 import certified from '../Image/certified.png'
+import McDelivery from '../Image/McDelivery.png'
+import julia from '../Image/julia.jpg'
+import abbas from '../Image/abbas.jpg'
+import {Link} from 'react-router-dom'
 
+//             <div className='business-insultant' >    <h2 className='titleabout business-insultant-h2'>
+// We provide certified  styling services to people on how to dress appropriately on the work floor as well at social events such as</h2>
+// <ul className='tosul'>
+// <li className='tosli'><p> On -call stylist for hotels, event planners, wedding planners  </p> </li>
+// <li className='tosli'><p> Stylist for politicians </p> </li>
+// <li className='tosli'><p> Visual merchandising for pop-up stores  </p> </li>
+// <li className='tosli'> <p> Styling for retail stores </p> </li>
+// <li className='tosli'> <p> Casting models for events  </p> </li>
+// </ul>
+// <h2 className='titleabout  business-insultant-h2'> This consultation could be scheduled by appointment. The private consultation consists of </h2>
+// <ul className='tosul'>
+// <li className='tosli'><p>  Client interview/Body shape analysis </p> </li>
+// <li className='tosli'><p> Client needs Analysis   </p></li>
+// <li className='tosli'><p> Agreed Budget to spend </p> </li>
+// <li className='tosli'><p> Preference of shopping with the stylist/trying out some outfits </p> </li>
+// <li className='tosli'><p> Delivery options available of try outs after online consultation  </p></li>
+// <img className='certified' src={certified} />
+//
+// </ul>
+//             </div>
 
 const About = () => {
 
@@ -107,39 +131,36 @@ return (<>
 
 <div className="homebody">
   <div className='allOfNav'>
-      <Navbar user={user} totalProducts={totalProducts}/>
+      <NavbarHome user={user} />
         </div>
 
         <div id="contact" className='aboutfcmhome' >
-         <h2 className='contactinfotext'>Contact info </h2>
-        <div className='contact-info'>
-        <p > lilgil99@gmail.com </p>
-        <p> 597 890-3150 / 597 887-5959 </p>
+         <h2 className='contactinfotext'>About us </h2>
+         <div className='contact-info'>
+         <h2 className='contactinfotext '>  <Link className='colorwhite' to='/Contact'> Contact Us  </Link> </h2>
+         <img className='toslogo' src={home} />
+         </div>
 
-        <img className='toslogo' src={home} />
-        </div>
          </div>
 
 
 
 
                  <div className='allofabout'>
-         <div className=' insidefcm food' >
+         <div className=' insidefcm food  insideabout' >
           <h2 className='abttext titleabout'> Food Delivery Services</h2>
           <ul className='tosul'>
           <li  className='tosli'> <p> Provides delivery services of food items by restaurants   </p> </li>
             <li className='tosli'> <p> Signed contractual agreements by  both parties  </p> </li>
-              <li className='tosli'> <p> FCM monthly commission fee is USD 100,00 </p> </li>
               <li className='tosli'> <p> Delivery fees depends on the location of the restaurant which can range between SRD 50,00  and SRD 65,00 and should be no more than 8 km from the restaurant. </p> </li>
                 <li className='tosli'> <p> The delivery driver collects the amount of the delivery and delivery fees and gives it to the restaurant in full when returns to the restaurant. </p> </li>
                   <li className='tosli'> <p> By the end of the day the restaurant gives the delivery driver the delivery fees together with a sheet of adresses of the delivered orders.The total of the orders on the sheet should always match the amount of the delivery fees. </p> </li>
                     <li className='tosli'> <p> The restaurant is responsible for the correct address given to the FCM driver. If not the restaurant will have to pay the delivery fees to the driver.</p> </li>
 
-
            </ul>
           </div>
 
-          <div className=' insidefcm fashion' >
+          <div className=' insidefcm fashion insideabout' >
            <h2 className='abttext titleabout'> Clothing Delivery Services</h2>
             <ul className='tosul'>
             <li className='tosli'> <p> Provides delivery of clothing items when purchased through the FCM clothing link.</p> </li>
@@ -147,17 +168,15 @@ return (<>
                 <li className='tosli'> <p> After we received the invoice we will send you the total cost via email.</p> </li>
                 <li className='tosli'> <p> Payment methods : via internet banking,COD (cash on delivery)</p> </li>
                   <li className='tosli'> <p> No return policy of items kept for more than 2 days.</p> </li>
-                    <li className='tosli'> <p> Delivery fees North SRD 75.</p> </li>
-                  <li className='tosli' >  <p> Delivery fees South SRD 65.</p> </li>
+
             </ul>
            </div>
 
-           <div className='insidefcm insurance' >
+           <div className='insidefcm insurance insideabout' >
             <h2 className='abttext titleabout'> And More</h2>
             <ul className='tosul'>
             <li  className='tosli'> <p> Provides delivery services of non food companies  </p> </li>
               <li className='tosli'> <p> Signed contractual agreements by  both parties  </p> </li>
-                <li className='tosli'> <p> FCM monthly commission fee is USD 100,00 </p> </li>
                 <li className='tosli'> <p> Delivery fees depends on the location  which can range between SRD 50,00  and SRD 65,00 and should be no more than 8 km. </p> </li>
                   <li className='tosli'> <p> The delivery driver collects the amount of the delivery and delivery fees and gives it to the company in full when returns to the company. </p> </li>
                     <li className='tosli'> <p> By the end of the day the company gives the delivery driver the delivery fees together with a sheet of adresses of the delivered orders.The total of the orders on the sheet should always match the amount of the delivery fees. </p> </li>
@@ -170,26 +189,7 @@ return (<>
 
             </div>
 
-            <div className='business-insultant' >    <h2 className='titleabout business-insultant-h2'>
-We provide certified  styling services to people on how to dress appropriately on the work floor as well at social events such as</h2>
-<ul className='tosul'>
-<li className='tosli'><p> On -call stylist for hotels, event planners, wedding planners  </p> </li>
-<li className='tosli'><p> Stylist for politicians </p> </li>
-<li className='tosli'><p> Visual merchandising for pop-up stores  </p> </li>
-<li className='tosli'> <p> Styling for retail stores </p> </li>
-<li className='tosli'> <p> Casting models for events  </p> </li>
-</ul>
-<h2 className='titleabout  business-insultant-h2'> This consultation could be scheduled by appointment. The private consultation consists of </h2>
-<ul className='tosul'>
-<li className='tosli'><p>  Client interview/Body shape analysis </p> </li>
-<li className='tosli'><p> Client needs Analysis   </p></li>
-<li className='tosli'><p> Agreed Budget to spend </p> </li>
-<li className='tosli'><p> Preference of shopping with the stylist/trying out some outfits </p> </li>
-<li className='tosli'><p> Delivery options available of try outs after online consultation  </p></li>
-<img className='certified' src={certified} />
 
-</ul>
-            </div>
 
 
 

@@ -11,7 +11,7 @@ return (<>
 
 <div className="footer">
 <div className="inside-footer" >
-<Link to='/About'> <p className="text-black" > Contact info </p> </Link>
+<Link to='/contact'> <p className="text-black" > Contact info </p> </Link>
  </div>
 
 <div className="tos">

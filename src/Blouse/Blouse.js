@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../comp/Navbar'
 import Products from './Products'
-import Products0 from './Products0'
 import {useState, useEffect} from 'react'
 import { auth, fs } from '../Firebase'
 import { useNavigate } from 'react-router-dom'

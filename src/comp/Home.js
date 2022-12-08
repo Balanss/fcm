@@ -1,40 +1,13 @@
 
-// {products.length > 0 && (
-//     <div className='productPageHome'>
-//
-//         <div className='saleDiv'>
-//           <div> <span className='blink'> <h1 className='text-center saleblink'>On sale Today!  </h1> </span> </div>
-//
-//          <div className='displaysale1'>   <BlazerSaleHomePage/> </div>
-//           <div className='displaysale1'>  <DressOnSale />   </div>
-//
-//         </div>
-// <div className='saleDiv  salediv2' >
-// <div className='divfornewh1'>
-// <h1 className='newh1 '> New in our shop! </h1> </div>
-//         <Pants />
-//
-//         </div>
-//
-//     </div>
-// )}
-// {products.length < 1 && (
-//     <div className='please-wait'>  <Box>
-//   <CircularProgress />
-//   </Box> </div>
-// )}
-
 import React from 'react'
 import Navbar from './Navbar'
-//import BlazerSaleHomePage from '../Blazers/BlazerSaleHomePage'
-//import DressOnSale from '../comp3/DressOnSale'
 import {useState, useEffect} from 'react'
 import { auth, fs} from '../Firebase'
 import Footer from './Footer'
 import {Link} from 'react-router-dom'
 import Cat from './Cat'
 
-
+//this is home for clothing
 
  const Home = () => {
 

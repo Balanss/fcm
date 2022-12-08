@@ -11,7 +11,9 @@ import About from './comp/About'
 import Footer from './comp/Footer'
 import Blouse from './Blouse/Blouse'
 import ScrollToTop from "./comp/ScrollToTop"
+import RealHome from "./comp/RealHome"
 import {HashRouter,Routes, Route} from 'react-router-dom'
+import ContactUs from './comp/ContactUs'
 
 //
 
@@ -27,8 +29,10 @@ function App() {
 <HashRouter>
 <ScrollToTop />
 <Routes>
-<Route path="/" element={<Home />}></Route>
+<Route path="/clothing" element={<Home />}></Route>
+<Route path="/" element={<RealHome />}></Route>
 <Route path='/about' element={<About />} ></Route>
+<Route path='/contact' element={<ContactUs />} ></Route>
 <Route path="/underwear" element={<Home2 />} ></Route>
 <Route path="/about" element={<About />} ></Route>
 <Route path="/dress" element={<Dress />} ></Route>

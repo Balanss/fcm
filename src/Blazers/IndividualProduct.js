@@ -1,10 +1,11 @@
 import React from 'react'
-import { useState, useEffect} from 'react'
+import { useState , useEffect} from 'react'
 import Carousel from 'react-material-ui-carousel'
 import {  Button } from '@mui/material'
 import {useAuthState} from 'react-firebase-hooks/auth';
-import {auth} from '../Firebase';
-import { getFirestore, doc, deleteDoc,updateDoc} from "firebase/firestore";
+import {auth , db} from '../Firebase';
+import { Link } from 'react-router-dom'
+import { getFirestore, doc, deleteDoc ,updateDoc} from "firebase/firestore";
 
 
 
@@ -12,10 +13,13 @@ import { getFirestore, doc, deleteDoc,updateDoc} from "firebase/firestore";
  const IndividualProduct = ({individualProduct , addToCart}) => {
 const [successMsg,setSuccessMsg] = useState('')
   const [userAnon] = useAuthState(auth);
-  const [ id, setId] = useState('')
-  const [ onSale,setOnSale] = useState('no')
+const [ id, setId] = useState('')
+const [ onSale,setOnSale] = useState('no')
   const [price,setPrice] = useState('')
   const [salePrice,setSalePrice] = useState('')
+
+
+
 
     const handleClick = () => {
       addToCart(individualProduct)
@@ -47,19 +51,21 @@ const [successMsg,setSuccessMsg] = useState('')
 
     const uid = GetUserUid();
 
-    const handleDelete = () => {
-    setId(individualProduct.ID)
-      const db = getFirestore()
-    const docRef = doc(db, 'Blazers',id)
-    deleteDoc(docRef)
-    .then(() => {
-        console.log("Entire Document has been deleted successfully.")
-    })
-    .catch(error => {
-        console.log(error);
-    })
 
-    }
+const handleDelete = () => {
+setId(individualProduct.ID)
+console.log(id)
+  const db = getFirestore()
+const docRef = doc(db, 'Dress',id)
+deleteDoc(docRef)
+.then(() => {
+    console.log("Entire Document has been deleted successfully.")
+})
+.catch(error => {
+    console.log(error);
+})
+
+}
 
 const handleUpdate = () => {
   setId(individualProduct.ID)
@@ -81,60 +87,71 @@ updateDoc(docRef, sale)
 
 }
 
+
 const master = process.env.REACT_APP_MY_API_KEY
 
+if (uid === master ) {
+  return ( <>
+
+      <div className='admin'>
+          <Button variant="contained" color="error" onClick={handleDelete}>Delete</Button>
+          <div className='admin-dress'>
+           <img tabIndex='1' className='admin-dress' src={individualProduct.url} alt="product-img"/>
+          </div>
+          <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
+          <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
+          <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
+          <br />
+                        <form onClick={handleUpdate}>
+                        <input type="text"  placeholder="product on sale ?" value={onSale}  onChange={(e) => setOnSale(e.target.value)} />
+                        <input type="number"  placeholder="product price" value={price}  onChange={(e) => setPrice(e.target.value)}/>
+                        <input type="number"  placeholder="product sale price" value={salePrice}  onChange={(e) => setSalePrice(e.target.value)}/>
+                          <Button variant="contained" color="success" >Update</Button>
+                          </form>
+
+      </div>
+
+      <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
+      </p> </div>
+  </>  )
 
 
-    if (uid === master ) {
-      return ( <>
 
-          <div className='admin'>
 
-              <Button variant="contained" color="error"   onClick={handleDelete}>Delete</Button>
+ } else {
 
-              <div className='admin-dress'>
-               <img tabIndex='1' className='admin-dress' src={individualProduct.url} alt="product-img"/>
-              </div>
-              <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
-              <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
-              <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
-              <br />
-              <form onClick={handleUpdate}>
-              <input type="text"  placeholder="product on sale ?" value={onSale}  onChange={(e) => setOnSale(e.target.value)} />
-              <input type="number"  placeholder="product price"   onChange={(e) => setPrice(e.target.value)}/>
-              <input type="number"  placeholder="product sale price" value={salePrice}  onChange={(e) => setSalePrice(e.target.value)}/>
-                <Button variant="contained" color="success" >Update</Button>
-                </form>
+
+
+
+  return ( <>
+
+
+
+
+
+      <div className='dress-product'>
+
+          <div className='product-img-blazer'>
+           <img tabIndex='1' className='images-blazer' loading="lazy" src={individualProduct.url} alt="product-img"/>
+          </div>
+          <div className='game-blazer'>
+        <h4> Size:{individualProduct.description}</h4>
+        <h4>$ {individualProduct.price}</h4>
+          <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
           </div>
 
+      </div>
 
-          <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
-          </p> </div>
-      </>  )
-
-
-
-
-     } else {
-
-      return ( <>
-
-          <div className='product product-dress product-blazer'>
-
-              <div className='product-img-dress'>
-               <img tabIndex='1' className='images-dress image-blazer' src={individualProduct.url} alt="product-img"/>
-              </div>
-              <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
-              <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
-              <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
+      <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
+      </p> </div>
+ </>  )
+}
 
 
-          </div>
 
-          <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
-          </p> </div>
-     </>  )
-    }
+
+
+
 
 }
 

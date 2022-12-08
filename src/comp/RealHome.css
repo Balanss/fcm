@@ -1,0 +1,166 @@
+.homepagefcm{
+  background-image: url('../Image/test1.png');
+  margin-top: 133px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 70vw;
+      color: #fff;
+      display: flex;
+    justify-content: center;
+}
+
+.bigscreen{display :none}
+.colorwhite{color: #fff}
+
+.homepageservice{
+  display: flex;
+flex-direction: column;
+}
+
+.homepagesame{
+  font-size: 24px;
+      text-align: center;
+      text-shadow: -1px 1px 6px black;
+      display: inline-block;
+      align-self: flex-end;
+}
+
+.homepagemotto{
+  background-color: #ff50a5;
+    color: white;
+    text-align: center;
+}
+
+.smileicon{font-size:30px !important;}
+.juliainfo{ font-size:13px;}
+.macky{margin-top:10px;}
+.homepagecat{width:95% !important; justify-content: flex-start!important;}
+
+.foodemoji{
+    background-color: #89cdf0;
+}
+
+.emoji{
+height: 200px;
+}
+
+.emojipink{
+width:60vw;
+    background-color: #ff50a5;
+}
+.foodemojipink{
+      background-color: #ff50a5;
+}
+
+
+@media only screen and (min-width: 768px){
+
+
+  .homepagefcm{width:79vw;
+  margin: auto;
+background-position: right;
+margin-top: 130px;
+    background-position: inherit;
+    height: 45vw;
+}
+
+.homepagefood{
+  width: 79vw!important;
+
+}
+
+.homepagefood:hover{
+  outline-color: #62bef7;
+  outline-style: auto;
+}
+
+.homepagemotto{
+  width: 79vw;
+margin: auto;
+}
+
+.insidefcm {
+    width: 79vw;
+    margin: auto;
+}
+.foodemoji {
+    width: 79vw;
+    margin: auto;
+
+}
+.emojipink {
+    margin: auto;
+}
+
+.smallscreen{
+    width: 32vw;
+}
+
+.foodemojipink {
+    background-color: #ff50a5;
+    width: 79vw;
+    margin: auto;
+}
+
+
+  }
+
+  @media screen and (min-width:1440px){
+
+.homepagesame{
+  font-size:40px;
+  margin-left:20px;
+}
+    .smallscreen{
+      display: none;
+
+    }
+
+    .bigscreen{display:block;
+    width:60vw; }
+
+    .foodemojipink {
+    background-color: #ff50a5;
+    width:79vw !important;
+    margin: auto
+}
+
+.homepagefcm{
+  background-image: url("../Image/bigscreen.png");
+    width: 79vw;
+    margin: auto;
+    background-position: right;
+    background-position: center;
+    height: 33vw;
+        justify-content: flex-start;
+
+}
+
+    .homepagefood{
+      width: 24vw !important;
+    height: 1039px !important;
+    }
+
+    .homepageservice{
+      display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+width: 82.5vw;
+margin: auto;
+    }
+
+    .foodemoji {
+    display:none
+}
+  }
+
+  @media screen and (min-width: 2560px){
+.homepagefood {
+    width: 24vw !important;
+    height: 50vh !important;
+  }
+
+  .bigscreen{display:block;
+  width:40vw; }
+}

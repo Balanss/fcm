@@ -88,7 +88,7 @@ const master = process.env.REACT_APP_MY_API_KEY
       <div className='admin'>
           <Button variant="contained" color="error" onClick={handleDelete}>Delete</Button>
           <div className='admin-dress'>
-           <img tabIndex='1' className='admin-dress' src={individualProduct.url} alt="product-img"/>
+           <img tabIndex='1' className='admin-dress' loading="lazy" src={individualProduct.url} alt="product-img"/>
           </div>
           <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
           <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
@@ -112,22 +112,23 @@ const master = process.env.REACT_APP_MY_API_KEY
   } else {
 
   return ( <>
+    <div className='dress-product'>
 
-      <div className='product product-dress product-upants'>
+        <div className='product-img-underpants'>
+         <img tabIndex='1' className='images-underpants' loading="lazy" src={individualProduct.url} alt="product-img"/>
+        </div>
+        <div className='game  ud-game'>
+      <h4> Size:{individualProduct.description}</h4>
+      <h4>$ {individualProduct.price}</h4>
+        <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
+        </div>
 
-          <div className='product-img-dress'>
-           <img tabIndex='1' className='images-dress' src={individualProduct.url} alt="product-img"/>
-          </div>
-          <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
-          <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
-          <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
+    </div>
 
-
-      </div>
-
-      <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
-      </p> </div>
+    <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
+    </p> </div>
   </>  )
+
   }
 
 

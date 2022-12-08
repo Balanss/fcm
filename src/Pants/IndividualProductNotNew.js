@@ -117,21 +117,22 @@ const master = process.env.REACT_APP_MY_API_KEY
 
   return ( <>
 
-      <div className='product  product-dress product-pants'>
+    <div className='dress-product'>
 
-          <div className='product-img-dress'>
-           <img tabIndex='1' className='images-dress' src={individualProduct.url} alt="product-img"/>
-          </div>
-          <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
-          <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
-          <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
+        <div className='product-img-dress'>
+         <img tabIndex='1' className='images-dress' loading="lazy" src={individualProduct.url} alt="product-img"/>
+        </div>
+        <div className='game'>
+      <h4> Size:{individualProduct.description}</h4>
+      <h4>$ {individualProduct.price}</h4>
+        <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
+        </div>
 
+    </div>
 
-      </div>
-
-      <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
-      </p> </div>
- </>  )
+    <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
+    </p> </div>
+</>  )
  }
 
 }

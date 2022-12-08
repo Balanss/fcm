@@ -1,11 +1,12 @@
 import React from 'react'
-import { useState, useEffect} from 'react'
+import { useState , useEffect} from 'react'
 import Carousel from 'react-material-ui-carousel'
 import {  Button } from '@mui/material'
 import {useAuthState} from 'react-firebase-hooks/auth';
-import {auth} from '../Firebase';
+import {auth , db} from '../Firebase';
 import { Link } from 'react-router-dom'
-import { getFirestore, doc, deleteDoc,updateDoc } from "firebase/firestore";
+import { getFirestore, doc, deleteDoc ,updateDoc} from "firebase/firestore";
+
 
 
 
@@ -14,8 +15,8 @@ const [successMsg,setSuccessMsg] = useState('')
   const [userAnon] = useAuthState(auth);
 const [ id, setId] = useState('')
 const [ onSale,setOnSale] = useState('no')
-const [price,setPrice] = useState('')
-const [salePrice,setSalePrice] = useState('')
+  const [price,setPrice] = useState('')
+  const [salePrice,setSalePrice] = useState('')
 
 
 
@@ -36,7 +37,6 @@ const [salePrice,setSalePrice] = useState('')
     }
 
 
-
     function GetUserUid(){
         const [uid, setUid]=useState(null);
         useEffect(()=>{
@@ -52,44 +52,45 @@ const [salePrice,setSalePrice] = useState('')
     const uid = GetUserUid();
 
 
- const handleDelete = () => {
- setId(individualProduct.ID)
- console.log(id)
+const handleDelete = () => {
+setId(individualProduct.ID)
+console.log(id)
   const db = getFirestore()
- const docRef = doc(db, 'Blouse',id)
- deleteDoc(docRef)
- .then(() => {
+const docRef = doc(db, 'Dress',id)
+deleteDoc(docRef)
+.then(() => {
     console.log("Entire Document has been deleted successfully.")
- })
- .catch(error => {
+})
+.catch(error => {
     console.log(error);
- })
+})
 
- }
+}
 
- const handleUpdate = () => {
-   setId(individualProduct.ID)
-     const db = getFirestore()
-     const docRef = doc(db, "Blouse", id);
- const sale = {
-   onSale: onSale,
-   price:Number(price),
-   salePrice: Number(salePrice),
- }
+const handleUpdate = () => {
+  setId(individualProduct.ID)
+    const db = getFirestore()
+    const docRef = doc(db, "Blazers", id);
+const sale = {
+  onSale: onSale,
+  price:Number(price),
+  salePrice: Number(salePrice),
+}
 
- updateDoc(docRef, sale)
- .then(docRef => {
-     console.log("A New Document Field has been added to an existing document");
- })
- .catch(error => {
-     console.log(error);
- })
+updateDoc(docRef, sale)
+.then(docRef => {
+    console.log("A New Document Field has been added to an existing document");
+})
+.catch(error => {
+    console.log(error);
+})
 
- }
+}
+
 
 const master = process.env.REACT_APP_MY_API_KEY
 
- if (uid === master ) {
+if (uid === master ) {
   return ( <>
 
       <div className='admin'>
@@ -99,15 +100,14 @@ const master = process.env.REACT_APP_MY_API_KEY
           </div>
           <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
           <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
-
           <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
-           <br />
-          <form onClick={handleUpdate}>
-          <input type="text"  placeholder="product on sale ?" value={onSale}  onChange={(e) => setOnSale(e.target.value)} />
-          <input type="number"  placeholder="product price" value={price}  onChange={(e) => setPrice(e.target.value)}/>
-          <input type="number"  placeholder="product sale price" value={salePrice}  onChange={(e) => setSalePrice(e.target.value)}/>
-            <Button variant="contained" color="success" >Update</Button>
-            </form>
+          <br />
+                        <form onClick={handleUpdate}>
+                        <input type="text"  placeholder="product on sale ?" value={onSale}  onChange={(e) => setOnSale(e.target.value)} />
+                        <input type="number"  placeholder="product price" value={price}  onChange={(e) => setPrice(e.target.value)}/>
+                        <input type="number"  placeholder="product sale price" value={salePrice}  onChange={(e) => setSalePrice(e.target.value)}/>
+                          <Button variant="contained" color="success" >Update</Button>
+                          </form>
 
       </div>
 
@@ -120,24 +120,36 @@ const master = process.env.REACT_APP_MY_API_KEY
 
  } else {
 
+
+
+
   return ( <>
 
-      <div className='product product-dress product-blouse'>
+
+
+
+
+      <div className='dress-product'>
 
           <div className='product-img-dress'>
-           <img tabIndex='1' className='images-dress' src={individualProduct.url} alt="product-img"/>
+           <img tabIndex='1' className='images-dress' loading="lazy" src={individualProduct.url} alt="product-img"/>
           </div>
-          <div className='product-text description'><h2> Size:{individualProduct.description}</h2></div>
-          <div className='product-text price'>  <h2>$ {individualProduct.price}</h2></div>
+          <div className='game'>
+        <h4> Size:{individualProduct.description}</h4>
+        <h4>$ {individualProduct.price}</h4>
           <Button variant="contained" color="success"  className='btn-ATC ' onClick={handleClick}>ADD TO CART</Button>
-
+          </div>
 
       </div>
 
       <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
       </p> </div>
  </>  )
- }
+}
+
+
+
+
 
 
 
