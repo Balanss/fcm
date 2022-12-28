@@ -56,7 +56,7 @@ const handleDelete = () => {
 setId(individualProduct.ID)
 console.log(id)
   const db = getFirestore()
-const docRef = doc(db, 'Dress',id)
+const docRef = doc(db, 'Blouse',id)
 deleteDoc(docRef)
 .then(() => {
     console.log("Entire Document has been deleted successfully.")
@@ -70,7 +70,7 @@ deleteDoc(docRef)
 const handleUpdate = () => {
   setId(individualProduct.ID)
     const db = getFirestore()
-    const docRef = doc(db, "Blazers", id);
+    const docRef = doc(db, "Blouse", id);
 const sale = {
   onSale: onSale,
   price:Number(price),

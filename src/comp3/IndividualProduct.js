@@ -70,7 +70,7 @@ deleteDoc(docRef)
 const handleUpdate = () => {
   setId(individualProduct.ID)
     const db = getFirestore()
-    const docRef = doc(db, "Blazers", id);
+    const docRef = doc(db, "Dress", id);
 const sale = {
   onSale: onSale,
   price:Number(price),
