@@ -26,6 +26,7 @@ color: white;
 }
 
 .contact-info{
+
   color: white;
   text-align: left
 }
@@ -92,7 +93,8 @@ margin-top: 100px;
 .insidefcm{
   line-height:2;
   font-size: clamp(1.1875rem, 1.0726rem + 0.5747vw, 1.375rem);
-  height:auto
+  height:auto;
+  padding: 10px;
 }
 
 
@@ -554,7 +556,7 @@ margin-top:170px;
 }
 
 .insideabout{
-  height:900px
+  height:800px
 }
 
 .allofabout{

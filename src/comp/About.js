@@ -150,9 +150,9 @@ return (<>
          <div className=' insidefcm food  insideabout' >
           <h2 className='abttext titleabout'> Food Delivery Services</h2>
           <ul className='tosul'>
-          <li  className='tosli'> <p> Provides delivery services of food items by restaurants   </p> </li>
-            <li className='tosli'> <p> Signed contractual agreements by  both parties  </p> </li>
-              <li className='tosli'> <p> Delivery fees depends on the location of the restaurant which can range between SRD 50,00  and SRD 65,00 and should be no more than 8 km from the restaurant. </p> </li>
+          <li  className='tosli'> <p> Provides delivery services of food items by restaurants. </p> </li>
+            <li className='tosli'> <p> Signed contractual agreements by  both parties. </p> </li>
+              <li className='tosli'> <p> Delivery fees  will be agreed upon. </p> </li>
                 <li className='tosli'> <p> The delivery driver collects the amount of the delivery and delivery fees and gives it to the restaurant in full when returns to the restaurant. </p> </li>
                   <li className='tosli'> <p> By the end of the day the restaurant gives the delivery driver the delivery fees together with a sheet of adresses of the delivered orders.The total of the orders on the sheet should always match the amount of the delivery fees. </p> </li>
                     <li className='tosli'> <p> The restaurant is responsible for the correct address given to the FCM driver. If not the restaurant will have to pay the delivery fees to the driver.</p> </li>
@@ -175,14 +175,10 @@ return (<>
            <div className='insidefcm insurance insideabout' >
             <h2 className='abttext titleabout'> And More</h2>
             <ul className='tosul'>
-            <li  className='tosli'> <p> Provides delivery services of non food companies  </p> </li>
-              <li className='tosli'> <p> Signed contractual agreements by  both parties  </p> </li>
-                <li className='tosli'> <p> Delivery fees depends on the location  which can range between SRD 50,00  and SRD 65,00 and should be no more than 8 km. </p> </li>
-                  <li className='tosli'> <p> The delivery driver collects the amount of the delivery and delivery fees and gives it to the company in full when returns to the company. </p> </li>
-                    <li className='tosli'> <p> By the end of the day the company gives the delivery driver the delivery fees together with a sheet of adresses of the delivered orders.The total of the orders on the sheet should always match the amount of the delivery fees. </p> </li>
-                      <li className='tosli'> <p> The company is responsible for the correct address given to the FCM driver. If not the restaurant will have to pay the delivery fees to the driver.</p> </li>
-
-
+            <li  className='tosli'> <p> Provides delivery services of non food companies.  </p> </li>
+              <li  className='tosli'> <p> Airport service to and from  Johan Adolf Pengel Int Airport . </p> </li>
+                <li  className='tosli'> <p> For the delivery of vehicle, medical and personal Assuria insurance cards.  </p> </li>
+                 <li className='tosli'> <p> For business inquiries click <Link to="/contact"> HERE </Link>  </p> </li>
              </ul>
 
             </div>

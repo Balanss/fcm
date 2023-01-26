@@ -647,6 +647,19 @@ height: 200px;
     margin-left: 5px !important;
     width:120px;
     margin-top:10px;
+        padding: 10px;
+  }
+
+  .plane-li{
+    width:170px !important;
+  }
+
+  .plane{
+    width: 170px !important;
+  }
+
+  .plane-p{
+    font: 16px;
   }
 
   .removemarker:hover{

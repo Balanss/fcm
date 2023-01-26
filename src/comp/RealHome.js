@@ -14,6 +14,9 @@ import clothingemoji from '../Image/clothingemoji.png'
 import moreemoji from '../Image/moreemoji.png'
 import danny from '../Image/danny.jpg'
 import banner from '../Image/banner.png'
+import plane from '../Image/plane.jpg'
+import republik from '../Image/republik.jpg'
+import assuria from '../Image/assuria.jpg'
 
 
 const RealHome = () => {
@@ -89,6 +92,7 @@ const RealHome = () => {
            <li className='tosli removemarker'> <a href="https://www.facebook.com/juliasfoodsu/">  <img className='McDelivery' src={julia} alt={julia} /> <p className='juliainfo'> Verlengde Gemenelandsweg 125, Paramaribo tel :896-8740</p> </a> </li>
            <li className='tosli removemarker'> <a href="https://www.facebook.com/slagerij.abbas.sr/"> <img className='McDelivery' src={abbas} alt={abbas} /> <p> Goudenregen St, Paramaribo tel:432-233</p> </a> </li>
            <li className='tosli removemarker'> <a href="https://www.facebook.com/people/Hotel-de-Luifel/100068379541560/"> <img className='McDelivery' src={danny} alt={danny} /> <p>  Gonda St, Paramaribo tel:39-933</p> </a> </li>
+           <li className='tosli removemarker'> <a href="https://www.facebook.com/RepublikRestocafe"> <img className='McDelivery' src={republik} alt={republik} /> <p> Lalarookhmall , Paramaribo tel:861-4841</p> </a> </li>
          </div>
                 </ul>
                </div>
@@ -108,9 +112,13 @@ const RealHome = () => {
                 <div className='insidefcm insurance homepagefood homepagemore' >
                  <h2 className='abttext titleabout'> And More</h2>
                  <ul className='tosul'>
-                 <li  className='tosli'> <p> Provides delivery services of non food companies  </p> </li>
-                   <li className='tosli'> <p> Signed contractual agreements by  both parties  </p> </li>
-                   <li className='tosli'> <p> For business inquiries click <Link to="/about"> HERE </Link>  </p> </li>
+                 <li  className='tosli'> <p> Pickup to and from Johan Adolf Pengel Int airport.  </p> </li>
+                    <li  className='tosli'> <p> For the delivery of vehicle, medical and personal insurance cards.  </p> </li>
+                   <li className='tosli'> <p> For business inquiries click <Link to="/About"> HERE </Link>  </p> </li>
+                   <div className='div-business'>
+                     <li className='tosli removemarker plane-li'>  <img className='McDelivery plane' src={plane} alt={plane} /> <p className='plane-p'> Contact:  597 890-3150 / 597 887-5959  </p> </li>
+                      <li className='tosli removemarker plane-li'>  <img className='McDelivery plane' src={assuria} alt={assuria} /> <a href='https://www.facebook.com/Assuria'> <p className='plane-p'> Assuria verzekeringen </p> </a>  </li>
+                   </div>
                   </ul>
 
                  </div>
