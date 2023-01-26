@@ -94,7 +94,7 @@ margin-top: 100px;
   line-height:2;
   font-size: clamp(1.1875rem, 1.0726rem + 0.5747vw, 1.375rem);
   height:auto;
-  padding: 10px;
+
 }
 
 
@@ -492,7 +492,7 @@ margin-top:170px;
 
 .insidefcm{
   height:auto;
-  width:100vw
+  width: 76.5vw;
 }
   .saleDiv{
     width:700px;
@@ -556,7 +556,7 @@ margin-top:170px;
 }
 
 .insideabout{
-  height:800px
+  height:900px
 }
 
 .allofabout{

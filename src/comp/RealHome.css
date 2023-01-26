@@ -138,15 +138,15 @@ margin: auto;
 }
 
     .homepagefood{
-      width: 24vw !important;
-    height: 1039px !important;
+      width: 25vw !important;
+    height: 1300px !important;
     }
 
     .homepageservice{
       display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-width: 82.5vw;
+width: 79vw;
 margin: auto;
     }
 
@@ -157,8 +157,8 @@ margin: auto;
 
   @media screen and (min-width: 2560px){
 .homepagefood {
-    width: 24vw !important;
-    height: 50vh !important;
+    width: 23.2vw !important;
+    height: 80vh !important;
   }
 
   .bigscreen{display:block;
