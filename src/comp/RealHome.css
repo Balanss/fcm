@@ -146,7 +146,7 @@ margin: auto;
       display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-width: 79vw;
+width: 81vw;
 margin: auto;
     }
 
@@ -163,4 +163,12 @@ margin: auto;
 
   .bigscreen{display:block;
   width:40vw; }
+
+  .homepageservice {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 83.7vw;
+    margin: auto;
+}
 }

@@ -6,6 +6,9 @@ import {useAuthState} from 'react-firebase-hooks/auth';
 import {auth , db} from '../Firebase';
 import { Link } from 'react-router-dom'
 import { getFirestore, doc, deleteDoc ,updateDoc} from "firebase/firestore";
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
 
 
 
@@ -18,6 +21,23 @@ const [ onSale,setOnSale] = useState('no')
   const [price,setPrice] = useState('')
   const [salePrice,setSalePrice] = useState('')
 
+
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
+
+  const [open, setOpen] = React.useState(false);
+  const [ ids , setIds] = useState('');
+   const handleClose = () => setOpen(false);
 
 
 
@@ -132,7 +152,9 @@ if (uid === master ) {
       <div className='dress-product'>
 
           <div className='product-img-dress'>
-           <img tabIndex='1' className='images-dress' loading="lazy" src={individualProduct.url} alt="product-img"/>
+          <Button  onClick={() => {setOpen(true); setIds(individualProduct.url)}}> <img tabIndex='1' className='images-blouse'
+          loading="lazy" src={individualProduct.url}
+          alt="product-img"/></Button>
           </div>
           <div className='game'>
         <h4> Size:{individualProduct.description}</h4>
@@ -144,6 +166,21 @@ if (uid === master ) {
 
       <div className='product-msg'> <p className='bgcolormsg'> {successMsg}
       </p> </div>
+      <div>
+
+     <Modal
+       open={open}
+       onClose={handleClose}
+       aria-labelledby="modal-modal-title"
+       aria-describedby="modal-modal-description"
+     >
+       <Box sx={style}>
+         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+           <img className="modal-img" loading="lazy" src={ids} alt={ids} />
+         </Typography>
+       </Box>
+     </Modal>
+   </div>
  </>  )
 }
 
