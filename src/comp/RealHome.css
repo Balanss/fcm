@@ -39,6 +39,7 @@ flex-direction: column;
 
 .foodemoji{
     background-color: #89cdf0;
+    text-align: center;
 }
 
 .emoji{
@@ -51,6 +52,7 @@ width:60vw;
 }
 .foodemojipink{
       background-color: #ff50a5;
+      text-align: center;
 }
 
 

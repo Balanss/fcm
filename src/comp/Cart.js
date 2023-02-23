@@ -196,31 +196,28 @@ return(
 
 
 <div className="cart-display">
-{cartProducts.length > 0 && (
+{cartProducts.length <= 10 && (
 
 
   <div className="userdisplay">  <h1 className='shopping-cart' > Shopping cart  </h1>
-    <div className="cart-info" >
 
-
-    </div>
 
     <div className="green-successdiv">  <p className='bgcolormsgcart'> {successMsg}
      </p> </div>
 
         <div className="cart-display-input" >
 
-          <div className="cart-display-items">    <LngResult/>  {abc}  </div>
+          <div className="cart-display-items">     {abc} </div>
 
 
             <form className='cart-form' onSubmit={sendEmail}>
 
                <label> * Name </label>
-               <input className='cart-form-spacing' type="text" name="name"   />
+               <input className='cart-form-spacing' type="text" name="name"  required  />
                <label>  *  Email </label>
-               <input className='cart-form-spacing' type="email" name="email"   />
+               <input className='cart-form-spacing' type="email" name="email"  required  />
                   <label>  * Contact number </label>
-               <input className='cart-form-spacing' type="number" name="contact-info"   />
+               <input className='cart-form-spacing' type="number" name="contact-info" required   />
                < textarea className="hide" name='message' value={url} />
 
                <p> Please enter your name, email and contact number </p>
@@ -238,12 +235,19 @@ return(
   </div>
 
 
+  {cartProducts.length > 10 && (<>
+    <div className="shopping-cart-max">  <h1 className='' > Shopping cart maximum number of items is 10 </h1>  </div>
+        <div className="cart-display-items">     {abc}  </div>
+  </>)}
 
-{cartProducts.length < 1 && (
+{cartProducts.length === 0 && (
     <div className='empty' ><h1> Cart is Empty </h1>
 < SentimentDissatisfiedIcon className='SentimentDissatisfiedIcon' />
     </div>
 ) }
+
+
+
 
 <Footer />
 </div>

@@ -743,7 +743,7 @@ height:380px;
 .images{
   width: 95px;
   cursor: zoom-in;
-    transition: transform 2s;
+
 }
 
 .images-dress{
@@ -753,12 +753,17 @@ height:380px;
 
 .images-underpants{
       width: 150px;
-      transition: transform 2s;
+      height: 250px;
+}
+
+.product-img-underpants{
+        background-color: #ededed;
+        width: 192px
 }
 
 .images-blazer{
   width: 220px;
-    transition: transform 2s;
+
 }
 
 .game-blazer{
@@ -1058,9 +1063,10 @@ flex-wrap: wrap;
 
 .images-underpants{
       width: 250px;
+
 }
 
-.
+
 
 
 

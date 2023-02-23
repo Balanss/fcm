@@ -25,6 +25,12 @@ z-index:1;
 text-align: center;
 }
 
+
+.shopping-cart-max{
+  margin-top: 150px;
+text-align: center;
+}
+
 .totalProducts{
   background-color: pink;
     height: 20px;
@@ -88,7 +94,7 @@ flex-wrap: wrap;
 
 .cart-css{
   cursor: default;
-width: 120px;
+width: 170px;
 margin: auto;
 margin-top: 30px;
 display: flex;
@@ -128,6 +134,7 @@ height: auto;
 
 .item-same{
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .btn-send{
@@ -150,7 +157,7 @@ cursor: pointer;
 
 .empty{
   text-align: center;
-    margin-top: 190px;
+    margin-top: -15px;
 }
 
 .hide{
@@ -170,7 +177,7 @@ right: 0;
   }
   .cart-form{
     width:300px;
-    height:300px;
+    height:320px;
   }
 
 .green-success{
