@@ -39,7 +39,7 @@ const [successMsg,setSuccessMsg] = useState('')
      }
 
      const user = GetCurrentUser();
-     // console.log(user);
+    
 
      // state of cart products
      const [cartProducts, setCartProducts]=useState([]);
@@ -184,77 +184,72 @@ return cartProduct.ID
 
 
 
-return(
-<>
-
-    <div className='homebody'>
-<div className="cartnavbar">
+if(cartProducts.length < 1){
+  return (
+    <div className="homebody">
+    <div className="cartnavbar">
 <Navbar user={user} totalProducts={totalProducts} />
 </div>
 
-
-
-
-<div className="cart-display">
-{cartProducts.length <= 10 && (
-
-
-  <div className="userdisplay">  <h1 className='shopping-cart' > Shopping cart  </h1>
-
-
-    <div className="green-successdiv">  <p className='bgcolormsgcart'> {successMsg}
-     </p> </div>
-
-        <div className="cart-display-input" >
-
-          <div className="cart-display-items">     {abc} </div>
-
-
-            <form className='cart-form' onSubmit={sendEmail}>
-
-               <label> * Name </label>
-               <input className='cart-form-spacing' type="text" name="name"  required  />
-               <label>  *  Email </label>
-               <input className='cart-form-spacing' type="email" name="email"  required  />
-                  <label>  * Contact number </label>
-               <input className='cart-form-spacing' type="number" name="contact-info" required   />
-               < textarea className="hide" name='message' value={url} />
-
-               <p> Please enter your name, email and contact number </p>
-               <input type="submit" value="Send"   className='btn-send'  />
-
-
-               </form>
-
-
-        </div>
-    </div>
-
-)}
-
-  </div>
-
-
-  {cartProducts.length > 10 && (<>
-    <div className="shopping-cart-max">  <h1 className='' > Shopping cart maximum number of items is 10 </h1>  </div>
-        <div className="cart-display-items">     {abc}  </div>
-  </>)}
-
-{cartProducts.length === 0 && (
     <div className='empty' ><h1> Cart is Empty </h1>
 < SentimentDissatisfiedIcon className='SentimentDissatisfiedIcon' />
-    </div>
-) }
 
-
-
-
-<Footer />
-</div>
-
-
-</>
+  </div></div>
 )
+} else if (cartProducts.length <= 10 ){
+  return (
+    <div className="homebody">
+    <div className="cartnavbar">
+<Navbar user={user} totalProducts={totalProducts} />
+</div>
+    <div className="cart-display">
+    <div className="userdisplay">  <h1 className='shopping-cart' > Shopping cart  </h1>
+
+
+     <div className="green-successdiv">  <p className='bgcolormsgcart'> {successMsg}
+      </p> </div>
+
+         <div className="cart-display-input" >
+
+           <div className="cart-display-items">     {abc} </div>
+
+
+             <form className='cart-form' onSubmit={sendEmail}>
+
+                <label> * Name </label>
+                <input className='cart-form-spacing' type="text" name="name"  required  />
+                <label>  *  Email </label>
+                <input className='cart-form-spacing' type="email" name="email"  required  />
+                   <label>  * Contact number </label>
+                <input className='cart-form-spacing' type="number" name="contact-info" required   />
+                < textarea className="hide" name='message' value={url} />
+
+                <p> Please enter your name, email and contact number </p>
+                <input type="submit" value="Send"   className='btn-send'  />
+
+
+                </form>
+
+
+         </div>
+     </div>
+   </div>
+   </div>
+  )
+
+} else if (cartProducts.length <= 11) {
+  return (<>
+    <div className="homebody">
+    <div className="cartnavbar">
+<Navbar user={user} totalProducts={totalProducts} />
+</div>
+    <div className="cart-display">
+    <div className="shopping-cart-max">  <h1 className='' > Shopping cart maximum number of items is 10 </h1>  </div>
+     <div className="cart-display-items">     {abc}  </div>
+     </div>
+     </div>
+</>  )
+}
 
 
 }
