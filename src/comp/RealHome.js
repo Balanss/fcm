@@ -89,9 +89,7 @@ const RealHome = () => {
          <div className='div-business'>
 
            <li className='tosli removemarker'> <a href="https://www.facebook.com/McDonalds-Suriname-113874132643211/">  <img className='McDelivery macky' src={McDelivery} alt={McDelivery} /> <p> Hermitage Mall</p> </a> </li>
-           <li className='tosli removemarker'> <a href="https://www.facebook.com/juliasfoodsu/">  <img className='McDelivery' src={julia} alt={julia} /> <p className='juliainfo'> Verlengde Gemenelandsweg 125, Paramaribo tel :896-8740</p> </a> </li>
            <li className='tosli removemarker'> <a href="https://www.facebook.com/slagerij.abbas.sr/"> <img className='McDelivery' src={abbas} alt={abbas} /> <p> Goudenregen St, Paramaribo tel:432-233</p> </a> </li>
-           <li className='tosli removemarker'> <a href="https://www.facebook.com/people/Hotel-de-Luifel/100068379541560/"> <img className='McDelivery' src={danny} alt={danny} /> <p>  Gonda St, Paramaribo tel:39-933</p> </a> </li>
            <li className='tosli removemarker'> <a href="https://www.facebook.com/RepublikRestocafe"> <img className='McDelivery' src={republik} alt={republik} /> <p> Lalarookhmall , Paramaribo tel:861-4841</p> </a> </li>
          </div>
                 </ul>

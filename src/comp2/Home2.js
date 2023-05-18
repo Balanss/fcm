@@ -136,7 +136,7 @@ const navigate = useNavigate()
                   </div>
               )}
               {underpants.length < 1 && (
-                  <div className='please-wait'>Please wait....</div>
+                  <div className='please-wait'>Out Of Stock</div>
               )}
 
 </div>
